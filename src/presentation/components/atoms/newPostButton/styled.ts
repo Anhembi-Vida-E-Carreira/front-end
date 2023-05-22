@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Button = styled(Link)`
     position: fixed;
-    right: 4rem;
+    right: 5rem;
     bottom: 10rem;
     z-index: 3;
     width: 7rem;

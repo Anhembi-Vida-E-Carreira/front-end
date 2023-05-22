@@ -19,3 +19,8 @@ export const PostDistrictAtom = atom<string>({
     'key': 'postDistrict',
     default: ''
 })
+
+export const PostStationAtom = atom<string>({
+    'key': 'postStation',
+    default: ''
+})
