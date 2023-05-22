@@ -10,6 +10,6 @@ export const Container = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem;
+    padding: 2rem;
     border-bottom: 1px solid #FF0000;
 `
