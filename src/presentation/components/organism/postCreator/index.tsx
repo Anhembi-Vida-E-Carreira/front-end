@@ -4,6 +4,7 @@ import InputDistrict from "../../atoms/inputDistrict";
 import InputMedia from "../../atoms/inputMedia";
 import InputStation from "../../atoms/inputStation";
 import InputTitle from "../../atoms/inputTitle";
+import ButtonSubmit from "../../atoms/submitButton";
 import DescriptionCounter from "../../molecules/descriptionCounter";
 import ImagesShower from "../../molecules/imagesContainer";
 
@@ -18,6 +19,7 @@ export default function PostCreator(){
             <InputStation/>
             <InputMedia/>
             <ImagesShower/>
+            <ButtonSubmit/>
         </Card>
     )
 }

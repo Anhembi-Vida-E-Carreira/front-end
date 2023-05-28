@@ -9,5 +9,6 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 5rem;
     gap: 3rem;
 `

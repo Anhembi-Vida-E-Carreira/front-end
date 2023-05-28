@@ -1,4 +1,5 @@
-import { atom } from "recoil";
+import { atom, selector } from "recoil";
+import { IPost } from "../../domain/post";
 
 export const PostTitleAtom = atom<string>({
     key: 'postTitle',
@@ -33,4 +34,25 @@ export const PostImagesAtom = atom<string[]>({
 export const ImageToRemove = atom<number>({
     key: 'removeImage',
     default: 88
+})
+
+export const Post = selector<Omit<IPost, 'rating' | 'postDate'>>({
+    key: 'post',
+    get: ({get}) => {
+        const title = get(PostTitleAtom)
+        const description = get(PostDescriptionAtom)
+        const city = get(PostCityAtom)
+        const district = get(PostDistrictAtom)
+        const station = get(PostStationAtom)
+        const images = get(PostImagesAtom)
+
+        return {
+            title,
+            description,
+            city,
+            district,
+            station,
+            images
+        }
+    }
 })

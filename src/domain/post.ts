@@ -1,11 +1,11 @@
 
 export interface IPost {
-    id: string,
-    title: string,
     description: string,
+    station: string,
+    title: string,
     city: string,
     district: string,
-    station: string,
     rating: number,
-    postDate: string
+    postDate: string,
+    images: string[]
 }
