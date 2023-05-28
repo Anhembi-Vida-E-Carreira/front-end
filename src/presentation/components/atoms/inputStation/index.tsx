@@ -14,16 +14,19 @@ export default function InputStation(){
     }, [])
     
     return (
-    <S.StandartSelect 
-    placeholder='Estação em que ocorreu...'  
-    value={selectedStation} 
-    onChange={(e) => setSelectedStation(e.target.value)}>
-        {stations.map((station, index) => {
-            return (
-                <S.SelectOptions key={index} value={station}>{station}</S.SelectOptions>
-            )
-        })}
-    </S.StandartSelect>
+    <S.Container>
+        <S.StandartSelect 
+        placeholder='Estação em que ocorreu...'  
+        value={selectedStation} 
+        onChange={(e) => setSelectedStation(e.target.value)}>
+            {stations.map((station, index) => {
+                return (
+                    <S.SelectOptions key={index} value={station}>{station}</S.SelectOptions>
+                )
+            })}
+        </S.StandartSelect>
+    </S.Container>
+   
             
     )
 }

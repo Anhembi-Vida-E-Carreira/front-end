@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const StandartSelect = styled.select`
     min-width: 21.5rem;
     max-width: fit-content;
@@ -8,13 +10,12 @@ export const StandartSelect = styled.select`
     border-radius: 0.8rem;  
     outline: none;
     font-size: 1.2rem;
-    padding-left: 1rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-x: 95%;
+    padding-inline: 1rem;
+    background-color: transparent;
+    overflow: hidden;
 
-    :focus, :hover {
-        box-shadow: 0 1rem 3.8rem -1rem rgba(22, 23, 24, 0.35), 0 1rem 2rem -1.5rem rgba(22, 23, 24, 0.2);
+    :focus {
+        outline: none;
     }
 `
 
@@ -29,4 +30,12 @@ export const SelectOptions = styled.option`
     :hover {
         box-shadow: 0 1rem 3.8rem -1rem rgba(22, 23, 24, 0.35), 0 1rem 2rem -1.5rem rgba(22, 23, 24, 0.2);
     }
+`
+
+export const Container = styled.div`
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 31rem;
+    
 `

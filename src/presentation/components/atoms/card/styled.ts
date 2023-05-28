@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
     display: flex;
     width: 33rem;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     gap: 1rem;
     padding-block: 2rem;

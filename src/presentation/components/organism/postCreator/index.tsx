@@ -1,9 +1,11 @@
 import Card from "../../atoms/card";
 import InputCity from "../../atoms/inputCity";
 import InputDistrict from "../../atoms/inputDistrict";
+import InputMedia from "../../atoms/inputMedia";
 import InputStation from "../../atoms/inputStation";
 import InputTitle from "../../atoms/inputTitle";
 import DescriptionCounter from "../../molecules/descriptionCounter";
+import ImagesShower from "../../molecules/imagesContainer";
 
 export default function PostCreator(){
 
@@ -14,6 +16,8 @@ export default function PostCreator(){
             <InputCity/>
             <InputDistrict/>
             <InputStation/>
+            <InputMedia/>
+            <ImagesShower/>
         </Card>
     )
 }

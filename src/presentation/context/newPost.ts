@@ -24,3 +24,13 @@ export const PostStationAtom = atom<string>({
     'key': 'postStation',
     default: ''
 })
+
+export const PostImagesAtom = atom<string[]>({
+    key: 'postImages',
+    default: []
+})
+
+export const ImageToRemove = atom<number>({
+    key: 'removeImage',
+    default: 88
+})

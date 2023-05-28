@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Input = styled.input`
-    background-color: #C7B9B9;
+    background-color: rgba(132, 151, 221, 0.87);
     width: 30rem;
     padding: 0.5rem;
     border: none;
@@ -10,7 +10,7 @@ export const Input = styled.input`
     border-radius: 0.8rem;
     
     ::placeholder {
-        color: black;
+        color: #FFFFFF;
         font-family: 'Poppins';
     }
 `

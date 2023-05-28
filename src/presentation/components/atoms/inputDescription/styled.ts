@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Input = styled.textarea`
-    background-color: #C7B9B9;
+     background-color: rgba(132, 151, 221, 0.87);
     width: 30rem;
     height: 10.8rem;
     padding: 0.5rem;
