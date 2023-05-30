@@ -6,12 +6,11 @@ export const Container = styled.div`
     gap: 1rem;
     width: 31rem;
 `
-export const Image = styled.img<{remove: boolean}>`
+export const Image = styled.img`
     width: 15rem;
     height: 15rem;
     border-radius: 0.8rem;
     object-fit: cover;
-    ${props => props.remove && css`opacity: 50;`}
 `
 export const ImageContainer = styled.button`
     border: none;

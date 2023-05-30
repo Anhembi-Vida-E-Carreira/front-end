@@ -6,9 +6,7 @@ import { useEffect, useRef } from 'react';
 export default function InputMedia(){
 
     const setImages = useSetRecoilState(PostImagesAtom)
-
     const inputRef = useRef<HTMLInputElement>(null)
-
     const imageToRemove = useRecoilValue(ImageToRemove)
 
     useEffect(() => {

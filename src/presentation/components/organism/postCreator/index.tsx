@@ -18,7 +18,7 @@ export default function PostCreator(){
             <InputDistrict/>
             <InputStation/>
             <InputMedia/>
-            <ImagesShower/>
+            <ImagesShower removable={true}/>
             <ButtonSubmit/>
         </Card>
     )
