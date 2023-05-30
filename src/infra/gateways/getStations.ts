@@ -1,5 +1,5 @@
 
-export default function getStations(){
+export default async function getStations(){
     const stations = [
         "Palmeiras-Barra Funda",
         "Marechal Deodoro",
