@@ -36,7 +36,7 @@ export const ImageToRemove = atom<number>({
     default: 88
 })
 
-export const Post = selector<Omit<IPost, 'rating' | 'postDate'>>({
+export const Post = selector<Omit<IPost, 'rating' | 'postDate' | 'id'>>({
     key: 'post',
     get: ({get}) => {
         const title = get(PostTitleAtom)
