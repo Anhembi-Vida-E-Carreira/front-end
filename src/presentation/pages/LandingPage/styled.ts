@@ -18,3 +18,7 @@ export const PostsDiv = styled.div`
     justify-content: center;
     gap: 3rem;
 `
+
+export const Message = styled.p`
+    font-size: 2rem;
+`

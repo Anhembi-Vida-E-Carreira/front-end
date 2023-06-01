@@ -27,15 +27,14 @@ export default function InputMedia(){
         const reader = new FileReader();
 
         for (const file of files){
+            reader.readAsDataURL(file);
             reader.onload = (event: ProgressEvent<FileReader>) => {
                 if (event.target && event.target.result) {
                   const newImage = event.target.result.toString()
 
                   setImages(old => [...old, newImage])
                 }
-              };
-        
-            reader.readAsDataURL(file);
+              };  
         }     
       }
     };

@@ -14,7 +14,7 @@ export default function LandingPage(){
 
     const getPosts = async () => {
         const posts = await getReports()
-        setPosts(posts)
+        setPosts(posts!)
     }
 
     useEffect(() => {
@@ -29,11 +29,11 @@ export default function LandingPage(){
             <S.Wrapper>
                 <Header/>
                 <S.PostsDiv>
-                  {posts.map(post => {
+                  {posts ? posts.map(post => {
                     return (
                         <Post {...post}/>
                     )
-                })}  
+                }) : <S.Message>Não há nenhuma denúncia</S.Message>}  
                 </S.PostsDiv>
                 
             </S.Wrapper>

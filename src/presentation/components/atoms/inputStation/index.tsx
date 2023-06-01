@@ -8,9 +8,13 @@ export default function InputStation(){
     const [selectedStation, setSelectedStation] = useRecoilState(PostStationAtom)
     const [stations, setStations] = useState<string[]>([])
 
-    useEffect(() => {
-      const newStations = getStations()
+    const get = async () => {
+      const newStations = await getStations()
       setStations(newStations)
+    }
+
+    useEffect(() => {
+      get()
     }, [])
     
     return (
