@@ -18,8 +18,8 @@ export default class AxiosHTTPClient implements HTTPClient{
             await axios.post(`${this.apiURL}${urlParams}`, {
                 content
             })
-        } catch (err) {
-            console.log(err)
+        } catch (err: any) {
+            throw new Error(err.message)
         }
     }
 

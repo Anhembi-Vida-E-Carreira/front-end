@@ -1,7 +1,7 @@
 import { useRecoilState } from 'recoil'
 import * as S from './styled'
 import { PostStationAtom } from '../../../context/newPost'
-import { useEffect, useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 import getStations from '../../../../infra/gateways/getStations'
 
 export default function InputStation(){
@@ -10,10 +10,10 @@ export default function InputStation(){
 
     const get = async () => {
       const newStations = await getStations()
-      setStations(newStations)
+      setStations(newStations!)
     }
 
-    useEffect(() => {
+    useLayoutEffect(() => {
       get()
     }, [])
     

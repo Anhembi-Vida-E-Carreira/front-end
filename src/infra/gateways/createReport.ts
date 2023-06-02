@@ -5,7 +5,7 @@ export default async function createReport(report: Omit<IPost, 'rating' | 'postD
     const client = new AxiosHTTPClient()
     try {
        await client.post<Omit<IPost, 'rating' | 'postDate' | 'id'>>(report, '/report')    
-    } catch (err){
-       console.log(err)
+    } catch (err: any){
+       return err.message
     }
 }

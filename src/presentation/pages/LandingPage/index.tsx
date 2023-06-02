@@ -3,7 +3,7 @@ import NewPostButton from '../../components/atoms/newPostButton'
 import Header from '../../components/molecules/header'
 import * as S from './styled'
 import { PostsAtom } from '../../context/posts'
-import { useEffect } from 'react'
+import { useLayoutEffect } from 'react'
 import getReports from '../../../infra/gateways/getReports'
 import Post from '../../components/organism/post'
 import { PostImagesAtom } from '../../context/newPost'
@@ -17,7 +17,7 @@ export default function LandingPage(){
         setPosts(posts!)
     }
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         setImages([])
         getPosts()
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -29,7 +29,7 @@ export default function LandingPage(){
             <S.Wrapper>
                 <Header/>
                 <S.PostsDiv>
-                  {posts ? posts.map(post => {
+                  {posts.length ? posts.map(post => {
                     return (
                         <Post {...post}/>
                     )

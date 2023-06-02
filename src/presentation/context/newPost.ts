@@ -36,6 +36,11 @@ export const ImageToRemove = atom<number>({
     default: 88
 })
 
+export const Error = atom<string>({
+    key: 'Error',
+    default: ''
+})
+
 export const Post = selector<Omit<IPost, 'rating' | 'postDate' | 'id'>>({
     key: 'post',
     get: ({get}) => {

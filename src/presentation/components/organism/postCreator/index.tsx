@@ -6,7 +6,7 @@ import InputStation from "../../atoms/inputStation";
 import InputTitle from "../../atoms/inputTitle";
 import ButtonSubmit from "../../atoms/submitButton";
 import DescriptionCounter from "../../molecules/descriptionCounter";
-import ImagesShower from "../../molecules/imagesContainer";
+import ImagesShower from "../../molecules/imagesContainer/createPost";
 
 export default function PostCreator(){
 

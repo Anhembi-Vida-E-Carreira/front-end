@@ -12,7 +12,7 @@ export default function ReportInfo(reportInfo: Omit<IPost, 'id' | 'images' | 'ra
             </S.TopDiv>
             <S.MidDiv>
                 <S.FiltersDiv>
-                    <S.Filter>Estação {reportInfo.station}</S.Filter>
+                    <S.Filter>{reportInfo.station}</S.Filter>
                     <S.Filter>{reportInfo.district}</S.Filter>
                     <S.Filter>{reportInfo.city}</S.Filter>
                 </S.FiltersDiv>

@@ -5,7 +5,7 @@ export const Title = styled.h2`
     font-weight: 700;
 `
 export const Filter = styled.p`
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #0F3BD6;
 `
 
@@ -58,6 +58,8 @@ export const FiltersDiv = styled.div`
 export const MidDiv = styled.div`
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 1rem;
     width: 30rem;
 `
