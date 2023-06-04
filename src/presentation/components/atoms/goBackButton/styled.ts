@@ -10,7 +10,7 @@ export const Button = styled(Link)`
     height: 7rem;
     background-color: transparent;
     cursor: pointer;
-    background-image: url('/addPostButton.svg');
+    background-image: url('/arrowLeft.svg');
     background-position: center;
     background-size: cover;
     border: none;
