@@ -1,10 +1,10 @@
 import updateRating from '../../../../infra/gateways/updateRating'
 import * as S from './styled'
 
-export default function UpvoteButton({rating, id}: {rating: number, id: number}){
+export default function UpvoteButton({rating, description}: {rating: number, description: string}){
 
     const upvote = async () => {
-        await updateRating(id)
+        await updateRating(description)
     }
 
     return (

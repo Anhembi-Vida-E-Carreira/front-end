@@ -11,7 +11,7 @@ export default function Post(post: IPost){
         <Card>
             <ReportInfo {...post}/>
             <PostImagesShower propsImages={post.images}/>
-            <UpvoteButton rating={post.rating} id={post.id}/>
+            <UpvoteButton rating={post.rating} description={post.description}/>
         </Card>
     )
 }
